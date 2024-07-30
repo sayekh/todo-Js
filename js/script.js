@@ -1,0 +1,1 @@
+const c = console.log.bind()
