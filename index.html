@@ -1,11 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>ToDo App | JS</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <div class="container">
+      <h2>ToDo App</h2>
+      <div class="input-section">
+        <input id="task-input" type="text" placeholder="add todo ..." />
+        <button id="add-button">Add</button>
+        <button id="edit-button">Edit</button>
+      </div>
+      <div class="todos-operator">
+        <div>
+          <button class="filter-todos" data-filter="all">All</button>
+          <button class="filter-todos" data-filter="pending">Pending</button>
+          <button class="filter-todos" data-filter="completed">
+            Completed
+          </button>
+        </div>
+        <button id="delete-all-button">Delete All</button>
+      </div>
+    </div>
+    <div id="alert-message"></div>
+    <div id="todos-container"></div>
+    <script src="./js/script.js"></script>
+  </body>
 </html>
